@@ -28,11 +28,13 @@
   height: 56px;
 }
 /*header*/
-header,main,footer {
+header,
+main,
+footer {
   max-width: 85%;
   margin: auto;
 }
-body{
+body {
   background-color: aliceblue;
 }
 
@@ -88,77 +90,65 @@ nav h3 {
 }
 
 /* section-2 */
-.sec2{
+.sec2 {
   margin: 25px auto;
 }
-.sec2-title{
-  
+.sec2-title {
   display: flex;
   flex-direction: column;
   row-gap: 20px;
 }
-.sec2-cards{
-display: flex;
-justify-content: space-between;
-column-gap: 40px;
-
+.sec2-cards {
+  display: flex;
+  justify-content: space-between;
+  column-gap: 40px;
 }
-.sec2-card{
+.sec2-card {
   margin: 20px auto;
-  
+
   border-radius: 12px;
   padding: 20px;
 }
-.sec2-card img{
+.sec2-card img {
   max-width: 60px;
 }
-.sec2-card > .btn3{
+.sec2-card > .btn3 {
   margin-top: 20px;
 }
-#card-1{
+#card-1 {
   box-sizing: border-box;
-border-radius: 16px;
+  border-radius: 16px;
 
-background: rgba(84, 144, 245, 0.2);
+  background: rgba(84, 144, 245, 0.2);
 }
-#card-2{
+#card-2 {
   box-sizing: border-box;
-border-radius: 16px;
+  border-radius: 16px;
 
-background: rgb(198, 228, 214);
+  background: rgb(198, 228, 214);
 }
-#card-3{
+#card-3 {
   box-sizing: border-box;
-border-radius: 16px;
+  border-radius: 16px;
 
-background: rgb(247, 235, 207);
-  
+  background: rgb(247, 235, 207);
 }
-.sec2-card-content{
+.sec2-card-content {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
 }
-.sec2-cmnt{
-  
+.sec2-cmnt {
   border-radius: 10px;
-  padding: 20PX;
+  padding: 20px;
   background-color: #fff;
 }
 
-.sec2-cmnt-content{
+.sec2-cmnt-content {
   display: flex;
   flex-direction: column;
   row-gap: 10px;
-  
 }
-
-
-
-
-
-
-
 
 /* newslatter section */
 .newsletter-container {
@@ -173,12 +163,14 @@ background: rgb(247, 235, 207);
 .newsletter-container h1 {
   font-size: 30px;
   color: #000;
+  margin-top: 35px;
   margin-bottom: 10px;
 }
 
 .newsletter-container p {
   font-size: 16px;
   color: #555;
+  margin-top: 30px;
   margin-bottom: 20px;
 }
 
@@ -186,14 +178,15 @@ background: rgb(247, 235, 207);
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 10px;
+
+  border-radius: 7px;
 }
 
 .newsletter-container input[type="email"] {
   padding: 10px;
   font-size: 16px;
   border: 1px solid #ccc;
-  border-radius: 5px;
+
   flex: 1;
   max-width: 300px;
 }
@@ -201,10 +194,10 @@ background: rgb(247, 235, 207);
 .newsletter-container button {
   padding: 10px 20px;
   font-size: 16px;
-  background-color: #026C4B;
+  background-color: #026c4b;
   color: #fff;
   border: none;
-  border-radius: 5px;
+
   cursor: pointer;
 }
 
@@ -218,9 +211,75 @@ background: rgb(247, 235, 207);
   color: #777;
 }
 
+/* donate section */
+.container {
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.container > p {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+.donation-options {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 20px;
+}
+
+.option {
+  background-color: #fffffffff;
+  border: none;
+  border-radius: 5px;
+  padding: 25px 30px;
+  font-size: 15px;
+  cursor: pointer;
+
+  font-weight: bold;
+}
+
+.option:hover {
+  background-color: #006a50;
+  color: #fff;
+}
+.other-amount {
+  margin-bottom: 20px;
+}
+
+.other-amount input {
+  align-items: center;
+  width: 80%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+}
+
+.done-button {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+  background-color: #006a50;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
 
 /* section4  */
-
 
 .news-section {
   padding: 40px 20px;
@@ -258,7 +317,7 @@ background: rgb(247, 235, 207);
 }
 
 .news-image {
-  width: 200px;
+  width: 250px;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
@@ -306,4 +365,27 @@ background: rgb(247, 235, 207);
 
 footer {
   text-align: center;
+}
+footer h3 {
+  margin-top: 30px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+footer hr {
+  margin: 20px auto;
+  border: none;
+  border-top: 1px solid #ccc;
+  width: 70%;
+  text-align: center;
+}
+footer .footer-info {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+footer .footer-info img {
+  width: 20px;
+  height: 20px;
 }
